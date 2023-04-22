@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <div class="main-box">
+        <div class="container">
+            <h1 class="text-center" style="margin-top: 80px;">CHOOSE THE LEVEL</h1>
+            <div class="row justify-content-center mt-5">
+                <div class="box-select-questions mt-5 col-3 d-flex flex-column justify-content-center">
+                    <button id="lvl" data-lvl="easy" class="js-main-btn questions btn mb-3">Ease: 8 min</button>
+                    <button id="lvl" data-lvl="medium" class="js-main-btn questions btn mb-3">Medium: 5 min</button>
+                    <button id="lvl" data-lvl="hard" class="js-main-btn questions btn">Hard: 3 min</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="testing-section d-none">
+        <div class="container ">
+            <div class="d-flex align-items-center justify-content-between">
+                <a href="/index.html" class="btn btn-light mt-5">🢨 Back</a href="/index.html">
+                <h2 class="level"></h2> <span class="time"></span><span class="number">Number of
+                    attempts: </span>
+                <p class="correct-answear"></p>
+            </div>
+            <ul class="js-list">
+                <li class="js-list">
+                    <div class="main-box mt-5">
+                        <div class="questions-box d-flex flex-column align-items-center">
+                            <img class="js-image" src="/images/aholi_punkti.gif" alt="" width="250">
+                            <h3 class="question">Bu qanday yo'l belgisi ?</h3>
+                        </div>
+                        <div class="answear-box d-flex flex-column">
+                            <p class="js-answear  btn btn-warning  mb-3 "></p>
+                            <p class="js-answear btn btn-warning  mb-3 "></p>
+                            <p class="js-answear  btn btn-warning  mb-3 "></p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <div id="restatr-box" class="restart-box d-none">
+        <div class="container">
+            <div class="text-center centrovka">
+                <p class="game-over">Game Over</p>
+                <a href="./index.html" class="btn btn-light restart">Restart</a>
+            </div>
+        </div>
+    </div>
+    <div class="win-box d-none">
+        <div class="container">
+            <div class="text-center centrovka">
+                <p class="you-win">You Win 😀</p>
+                <a href="./index.html" class="btn btn-light restart">Restart</a>
+            </div>
+        </div>
+    </div>
+    <audio>
+        <source class="corect-music" src="/audio/correct3-95630.mp3" type="audio/mp3">
+    </audio>
+    <script src="/js/signs.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
